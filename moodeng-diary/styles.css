@@ -1,0 +1,169 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .form-container {
+    background-color: white;
+    margin: 50px auto;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #5e47d8;
+    text-align: center;
+}
+
+textarea, select, input[type="text"], input[type="password"] {
+    max-width: 400px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #7a5fff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #5e47d8;
+}
+
+.post, .comment {
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.delete-button {
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.delete-button:hover {
+    text-decoration: underline;
+}
+
+.comment-form textarea {
+    width: calc(100% - 10px);
+    margin: 5px 0;
+}
+
+.comments {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #ddd;
+}
+
+em {
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+    color: #666;
+    word-wrap: break-word;  /* แก้ไขปัญหาข้อความยาวเกินไปให้อยู่ในกรอบ */
+    white-space: pre-wrap;  /* รักษาช่องว่างและการขึ้นบรรทัดใหม่ */
+    overflow-wrap: break-word;  /* สำหรับเบราว์เซอร์ที่ไม่รองรับ word-wrap */
+}
+/* เพิ่มสไตล์สำหรับปุ่ม Log Out */
+.logout-button {
+    display: block;
+    text-align: center;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px auto;
+    width: 200px;
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #e60000;
+}
+/* สไตล์สำหรับหน้าเข้าสู่ระบบ */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container input {
+    max-width: 400px; /* กำหนดขนาดที่ต้องการ */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* ให้ padding และ border นับรวมในความกว้าง */
+}
+
+.login-container button {
+    max-width: 400px; /* ขนาดเดียวกับ input */
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.login-container p {
+    margin-top: 10px;
+}
+
+.login-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* สไตล์สำหรับข้อความแสดงข้อผิดพลาด */
+.error-message {
+    background-color: #ffdddd;
+    color: #a94442;
+    border: 1px solid #a94442;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
